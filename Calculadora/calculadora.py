@@ -17,6 +17,9 @@ def calculadora(num1, num2, selecao):
 	else:
 		return 0
 
-num1 = 20; num2 = 100; selecao = 4
+num1 = int(input("Primeiro numero: "))
+num2 = int(input("Segundo numero : "))
+selecao = int(input("Operação (soma:1, subtração:2, multiplicação:3, divisão:4): "))
 
-calculadora(num1, num2, selecao)
+res = calculadora(num1, num2, selecao)
+print("Resultado = " + str(res))
